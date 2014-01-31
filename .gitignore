@@ -27,6 +27,9 @@ packages/
  
 # ReSharper
 _ReSharper*/
+
+# Databases
+*.mdf
  
 # NCrunch
 *ncrunch*

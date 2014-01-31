@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using EntityFrameworkDISample.Models;
 
 namespace EntityFrameworkDISample
 {
@@ -12,6 +13,7 @@ namespace EntityFrameworkDISample
     {
         protected void Application_Start()
         {
+            EfSampleContext.InitializeDatabase();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
